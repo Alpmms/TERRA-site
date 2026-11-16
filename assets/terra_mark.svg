@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- TERRA logomark: soil strata + frost-depth marker -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171C26"/>
+      <stop offset="1" stop-color="#0D1017"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#tile)"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="14.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="1.5"/>
+  <!-- surface line (pavement) -->
+  <path d="M13 17 H51" stroke="#E8ECF4" stroke-width="4" stroke-linecap="round"/>
+  <!-- subsurface probes -->
+  <path d="M32 17 V49" stroke="#E8ECF4" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  <!-- strata curves: base / subgrade -->
+  <path d="M13 32 C 22 29, 42 35, 51 32" stroke="#E8ECF4" stroke-opacity="0.30" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M13 42 C 22 45, 42 39, 51 42" stroke="#E8ECF4" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- frost-depth marker -->
+  <circle cx="32" cy="49" r="5" fill="#2DD4BF"/>
+  <circle cx="32" cy="49" r="2.1" fill="#05221D"/>
+</svg>

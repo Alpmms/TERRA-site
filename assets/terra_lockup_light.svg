@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64">
+  <!-- TERRA horizontal lockup, light background -->
+  <defs>
+    <linearGradient id="tile3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A3140"/>
+      <stop offset="1" stop-color="#0D1017"/>
+    </linearGradient>
+  </defs>
+  <rect width="60" height="60" x="2" y="2" rx="14" fill="url(#tile3)"/>
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="13.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5"/>
+  <path d="M13 17 H51" transform="translate(0,2)" stroke="#E8ECF4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 19 V51" stroke="#E8ECF4" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13 34 C 22 31, 42 37, 51 34" transform="translate(0,2)" stroke="#E8ECF4" stroke-opacity="0.30" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M13 44 C 22 47, 42 41, 51 44" transform="translate(0,2)" stroke="#E8ECF4" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="32" cy="51" r="5" fill="#2DD4BF"/>
+  <circle cx="32" cy="51" r="2.1" fill="#05221D"/>
+  <text x="78" y="38" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="2" fill="#10141B">TERRA</text>
+  <text x="78" y="53" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="1.6" fill="#5A6272">GEOTECHNICS INTELLIGENCE</text>
+</svg>
