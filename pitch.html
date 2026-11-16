@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TERRA · Investor Brief</title>
+<meta name="description" content="TERRA investor and I-Corps brief: niche wedge economics, verifiable traction, market and business model.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D1017'/%3E%3Cpath d='M8 10h16' stroke='%23E8ECF4' stroke-width='3.2' stroke-linecap='round'/%3E%3Cpath d='M16 10v11' stroke='%23E8ECF4' stroke-width='3.2' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='24.5' r='2.6' fill='%232DD4BF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0C10;--panel:#10131A;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.12);
+  --text:#F4F6FA;--muted:#A2AAB8;--faint:#6E7787;--accent:#2DD4BF;
+  --accent-dim:rgba(45,212,191,.12);--accent-line:rgba(45,212,191,.35);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',ui-sans-serif,system-ui,sans-serif;
+  font-feature-settings:"tnum" 1;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+::selection{background:rgba(45,212,191,.3)}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 28px}
+header{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(10,12,16,.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:11px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700}
+.brand .word{font-size:16px;letter-spacing:.12em}
+.logomark{width:30px;height:30px;border-radius:8px;display:block}
+.nav .back{margin-left:auto;font-size:13px;color:var(--muted);font-weight:500}
+.nav .back:hover{color:var(--text)}
+.hero{padding:140px 0 40px}
+.kicker{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);border:1px solid var(--accent-line);padding:6px 14px;border-radius:99px;margin-bottom:22px}
+h1{font-size:clamp(30px,4.6vw,50px);line-height:1.1;letter-spacing:-.028em;font-weight:750;max-width:780px}
+h1 .hl{color:var(--accent)}
+.sub{color:var(--muted);font-size:16px;line-height:1.75;max-width:640px;margin-top:20px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h2{font-size:clamp(22px,3vw,32px);letter-spacing:-.02em;line-height:1.2;font-weight:700;max-width:720px}
+p.lead{color:var(--muted);font-size:15px;line-height:1.8;max-width:680px;margin-top:14px}
+p.lead b{color:var(--text);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px}
+@media(max-width:840px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:15px;font-weight:650;margin-bottom:8px}
+.card p{color:var(--muted);font-size:13.5px;line-height:1.7}
+table.simple{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:30px}
+.simple th{text-align:left;color:var(--faint);font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;padding:10px 14px;border-bottom:1px solid var(--line2)}
+.simple td{padding:12px 14px;border-bottom:1px solid var(--line);color:var(--muted)}
+.simple td.k{color:var(--text);font-weight:550}
+.simple td.v2{color:var(--accent);font-weight:650}
+ul.list{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:12px;max-width:680px}
+ul.list li{color:var(--muted);font-size:14.5px;line-height:1.7;padding-left:22px;position:relative}
+ul.list li::before{content:'→';position:absolute;left:0;color:var(--accent);font-weight:700}
+ul.list li b{color:var(--text);font-weight:600}
+.final{margin:70px 0 90px;border:1px solid var(--accent-line);border-radius:18px;padding:52px 40px;text-align:center;background:var(--panel)}
+.btn{display:inline-flex;align-items:center;background:var(--accent);color:#05221D;font-weight:650;
+  padding:12px 24px;border-radius:10px;font-size:14px;transition:.16s}
+.btn:hover{background:#43E0CC}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line2)}
+footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--faint);font-size:12px}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+.rv.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="nav">
+  <svg class="logomark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#0D1017" stroke="rgba(255,255,255,.14)"/><path d="M8 10h16" stroke="#E8ECF4" stroke-width="3.2" stroke-linecap="round"/><path d="M16 10v11" stroke="#E8ECF4" stroke-width="3.2" stroke-linecap="round"/><circle cx="16" cy="24.5" r="2.6" fill="#2DD4BF"/></svg>
+  <div class="brand"><span class="word">TERRA</span></div>
+  <a class="back" href="index.html">← Back to site</a>
+</div></div></header>
+
+<div class="wrap hero">
+  <div class="kicker">Investor brief · I-Corps track</div>
+  <h1>Spring load restrictions, decided by <span class="hl">data</span>.</h1>
+  <p class="sub">TERRA replaces calendar-based seasonal load posting with a continual, open-data ML engine that carries calibrated uncertainty on every number. This brief covers the wedge economics, verifiable traction and the path to first revenue.</p>
+</div>
+
+<section><div class="wrap">
+  <div class="eyebrow">The problem</div>
+  <h2>Every cold-climate highway agency repeats the same expensive guess, every spring.</h2>
+  <p class="lead">Freeze–thaw cycles weaken pavement foundations. Agencies must decide <b>when to post seasonal load restrictions and when to lift them</b>. Today that decision runs on fixed calendar dates, 1970s thaw-depth tables and phone calls. Post too early and haulers lose millions to detours. Lift too early and weakened pavements fail under legal loads. The problem repeats annually across roughly 25 US states and the Canadian provinces, and AASHTO's MEPDG formally requires seasonal resilient-modulus inputs, which is exactly the quantity TERRA predicts with calibrated uncertainty.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">The solution</div>
+  <h2>A continual engine, an audit trail, and engineers keep final sign-off.</h2>
+  <p class="lead">TERRA Restriction ingests keyless public data: FHWA LTPP ground-truth tests, ERA5 reanalysis climate, USDA-NRCS SSURGO soil profiles, ISRIC SoilGrids texture and OpenStreetMap networks. A drift-aware ML core retraines itself continuously and issues <b>per-section restriction advisories with 90% confidence bands and a versioned model registry</b> that documents every promotion for the record.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">Why now</div>
+  <div class="grid">
+    <div class="card"><h3>LTPP reached maturity</h3><p>Thirty-plus years of instrumented sections, including in-ground frost sensors (SMP_FROST_PENETRATION) and real section GPS, downloadable per state from a public CDN. Verified on SDR 40, September 2026.</p></div>
+    <div class="card"><h3>MEPDG created formal demand</h3><p>AASHTOWare adoption made seasonal Mr inputs a hard requirement in practice, not a nice-to-have.</p></div>
+    <div class="card"><h3>The ML field is stuck on frozen models</h3><p>Published geotechnical models freeze at publication. Our 52-week deployment simulation on real LTPP streams shows a 6.9% mean and 20% final-week RMSE advantage. Reproducible, in-repo.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">Traction, verifiable</div>
+  <table class="simple">
+    <thead><tr><th>Evidence</th><th>Result</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Real FHWA tests ingested</td><td class="v2">3,508 Mr tests across 47 states</td></tr>
+      <tr><td class="k">Honest hold-out accuracy</td><td>R² 0.763 real-LTPP / 0.909 physics-calibrated domain</td></tr>
+      <tr><td class="k">Continual vs static, 52 weeks</td><td class="v2">−6.9% mean, −20% final-week RMSE; 16 drift alarms, 26 promotions</td></tr>
+      <tr><td class="k">Prediction uncertainty</td><td>Conformalized 90% intervals</td></tr>
+      <tr><td class="k">Smartphone aggregate QC</td><td>7/7 robustness suite (±40% light, blur, JPEG, rotation)</td></tr>
+      <tr><td class="k">Ground-truth frost data path</td><td class="v2">Built and verified: section GPS + frost depth</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">Market</div>
+  <h2>50 mandatory customers with the identical problem.</h2>
+  <ul class="list">
+    <li><b>Beachhead:</b> seasonal restriction advisory for cold-climate state DOTs such as MN, WI, MI, ND, SD, ME, NH, ID, WY and AK.</li>
+    <li><b>Expansion:</b> Mr prediction for design offices, then TERRA Lens smartphone QC for contractors and quarries, then rail track subgrade on the same physics.</li>
+    <li><b>Scale of spending:</b> $50B+ annual US highway capital and maintenance spending; pavement preservation dominates it.</li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">Business model</div>
+  <ul class="list">
+    <li><b>Open core</b> (MIT): the trust moat. Agencies can audit everything; researchers build on it; the living benchmark compounds.</li>
+    <li><b>Agency Pilot, $45k per season per DOT:</b> TERRA Restriction deployed and calibrated to agency FWD and frost-tube data, weekly briefings plus audit trail.</li>
+    <li><b>Enterprise:</b> multi-agency contracts, all modules, private data layers, SLA and on-prem options.</li>
+    <li><b>Later, data:</b> the living benchmark becomes licensable reference infrastructure, the rating-agency position.</li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">The ask</div>
+  <p class="lead">NSF I-Corps customer-discovery track with 25-plus DOT and county interviews to validate beachhead willingness-to-pay; pilot budget for two state DOTs next restriction season; patent claim drafting for the <b>continual conformal geotechnical prediction registry</b>: drift-aware promotion, conformal intervals and a provenance registry for civil-infrastructure prediction.</p>
+  <p class="lead" style="margin-top:18px">Founder: PhD researcher, Transportation Geotechnics, University of Illinois Urbana-Champaign, in the group of Prof. Erol Tutumluer (I-BALLAST, E-UIAIA, LTPP analysis). Domain depth exactly where these deals are evaluated: state DOT research boards.</p>
+</div></section>
+
+<div class="wrap"><div class="final">
+  <div class="eyebrow" style="text-align:center">Next step</div>
+  <h2 style="margin:0 auto 18px">See the engine run on real data.</h2>
+  <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+    <a class="btn" href="mailto:ulussevval72@gmail.com?subject=TERRA%20Investor%20Brief">Contact the founder</a>
+    <a class="btn ghost" href="index.html">Back to the product</a>
+  </div>
+</div></div>
+
+<footer><div class="wrap">Scientific honesty is the product: synthetic and real performance are never blended, every record carries provenance, every promotion is earned on a hold-out. Built on FHWA LTPP, ERA5 (Open-Meteo), USDA-NRCS SSURGO, ISRIC SoilGrids and OpenStreetMap. © 2026 TERRA.</div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
